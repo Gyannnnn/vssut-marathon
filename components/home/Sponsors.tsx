@@ -15,7 +15,7 @@ export default function Sponsors() {
           <div className="flex flex-col items-center gap-4">
             <div className="relative w-32 h-32 flex items-center justify-center">
               <Image
-                src="/VSSUTLOGO.png"
+                src="/vssut-main-logo.png"
                 alt="VSSUT Burla"
                 fill
                 className="object-contain"
@@ -29,7 +29,7 @@ export default function Sponsors() {
           <div className="flex flex-col items-center gap-4">
             <div className="relative w-32 h-32 flex items-center justify-center">
               <Image
-                src="/jsw.jpg"
+                src="/jsw-energy-logo.jpg"
                 alt="JSW Energy"
                 fill
                 className="object-contain rounded-full"

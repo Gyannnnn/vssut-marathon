@@ -74,7 +74,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2">
             {/* Logo */}
             <Image
-              src="/VSSUTLOGO.png"
+              src="/vssut-main-logo.png"
               alt="VSSUT Logo"
               width={70}
               height={70}
@@ -101,9 +101,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Button className="bg-secondary hover:bg-secondary/90 text-white font-semibold">
-              <Link href="/register/participant-register">
-                Register Now
-              </Link>
+              <Link href="/register/participant-register">Register Now</Link>
             </Button>
           </nav>
 
@@ -124,7 +122,7 @@ export default function Navbar() {
               {/* Centered Brand */}
               <div className="flex flex-col items-center gap-4 w-full">
                 <Image
-                  src="/VSSUTLOGO.png"
+                  src="/vssut-main-logo.png"
                   alt="VSSUT Logo"
                   width={80}
                   height={80}
@@ -165,7 +163,10 @@ export default function Navbar() {
                   className="w-full flex justify-center mt-4"
                 >
                   <Button className="w-4/5 bg-secondary hover:bg-secondary/90 text-white font-semibold text-lg py-6 shadow-lg shadow-secondary/20">
-                    <Link onClick={() => setIsOpen(false)} href="/register/participant-register">
+                    <Link
+                      onClick={() => setIsOpen(false)}
+                      href="/register/participant-register"
+                    >
                       Register Now
                     </Link>
                   </Button>
