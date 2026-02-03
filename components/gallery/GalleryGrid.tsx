@@ -13,32 +13,70 @@ interface GalleryGridProps {
 export default function GalleryGrid({ images }: GalleryGridProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  // Simple column distribution for masonry effect
-  // In a real masonry, we'd measure heights, but for same-aspect or mixed,
-  // simply distributing by index often works well enough for static lists if columns are CSS-based.
-  // Tailwind's columns-1 md:columns-2 lg:columns-3 is perfect for this.
+  const images2 = [
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05156.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05156+(1).JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05203.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05305.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05316.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05346.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05362.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05393.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05421.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05539.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM05908.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM06204.JPG",
+    },
+    {
+      url: "https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/marathon/SVM06129.JPG",
+    },
+  ];
 
   return (
     <>
       <div className="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
-        {images.map((src, index) => (
+        {images2.map((src, index) => (
           <motion.div
-            key={src}
+            key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: (index % 3) * 0.1 }}
             className="break-inside-avoid relative group rounded-xl overflow-hidden cursor-pointer"
-            onClick={() => setSelectedImage(src)}
+            onClick={() => setSelectedImage(src.url)}
           >
             <Image
-              src={src}
+              src={src.url}
               alt={`Gallery Image ${index + 1}`}
               width={800}
               height={600}
               className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              unoptimized
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
           </motion.div>
@@ -78,6 +116,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
                   className="object-contain"
                   sizes="100vw"
                   priority
+                  unoptimized
                 />
               </div>
             </motion.div>

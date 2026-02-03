@@ -24,6 +24,8 @@ async function getImages() {
   }
 }
 
+
+
 export default async function GalleryPage() {
   const images = await getImages();
 
