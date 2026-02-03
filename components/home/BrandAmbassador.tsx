@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BrandAmbassador() {
   return (
-    <section className="py-20 bg-background">
+    <section className="sm:py-20 bg-background">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           {/* Image Placeholder */}

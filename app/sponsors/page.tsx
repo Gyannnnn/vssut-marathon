@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const SPONSORS = [
   {
     tier: "Title Sponsor",
-    items: [{ name: "JSW Energy", image: "/jsw.jpg" }],
+    items: [{ name: "JSW Energy", image: "/jsw-energy-logo.jpg" }],
     size: "w-64 h-64", // Large for title
   },
   {
@@ -26,12 +26,12 @@ const SPONSORS = [
   },
   {
     tier: "Hospitality Partner",
-    items: [{ name: "Hotel Pearl Orchid", image: null }],
+    items: [{ name: "Hotel Pearl Orchid", image: "/hotel-perl-orchid.jpg" }],
     size: "w-40 h-28",
   },
   {
     tier: "Institutional Partner",
-    items: [{ name: "VSSUT Burla", image: "/VSSUTLOGO.png" }],
+    items: [{ name: "VSSUT Burla", image: "/vssut-main-logo.png" }],
     size: "w-32 h-32",
   },
 ];
@@ -56,7 +56,7 @@ export default function SponsorsPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 md:px-6 py-16 space-y-24">
+      <div className="container mx-auto px-4 md:px-6 py-16 space-y-18">
         {SPONSORS.map((group, index) => (
           <motion.div
             key={index}

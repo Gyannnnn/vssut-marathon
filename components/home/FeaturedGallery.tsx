@@ -85,7 +85,7 @@ export default function FeaturedGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 text-center"
+          className="mt-2 text-center"
         >
           <Link href="/gallery">
             <Button

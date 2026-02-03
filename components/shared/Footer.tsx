@@ -12,10 +12,12 @@ export default function Footer() {
           <div className="space-y-4 md:col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2">
               <Image
-                src="/VSSUTLOGO.png"
+                src="/vssut-main-logo.png"
                 alt="VSSUT Logo"
                 width={50}
                 height={50}
+                priority
+                unoptimized
                 className="rounded-full"
               />
               <span className="text-xl font-bold">VSSUT Marathon</span>
