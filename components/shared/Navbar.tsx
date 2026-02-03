@@ -128,6 +128,8 @@ export default function Navbar() {
                   alt="VSSUT Logo"
                   width={80}
                   height={80}
+                  unoptimized
+                  priority
                   className="w-auto h-24 drop-shadow-sm"
                 />
                 <div className="flex flex-col items-center text-center space-y-1">
