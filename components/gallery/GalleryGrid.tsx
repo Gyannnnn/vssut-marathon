@@ -77,6 +77,7 @@ export default function GalleryGrid({ images }: GalleryGridProps) {
               loading="lazy"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               unoptimized
+              priority
             />
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
           </motion.div>

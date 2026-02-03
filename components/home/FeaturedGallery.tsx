@@ -64,6 +64,7 @@ export default function FeaturedGallery() {
                   alt={`Marathon Highlight ${index + 1}`}
                   fill
                   unoptimized
+                  priority
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes={
                     index === 0

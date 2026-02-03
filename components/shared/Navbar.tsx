@@ -78,6 +78,8 @@ export default function Navbar() {
               alt="VSSUT Logo"
               width={70}
               height={70}
+              priority
+              unoptimized
             />
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-primary leading-none transition-colors">
