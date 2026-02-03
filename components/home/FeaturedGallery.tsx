@@ -7,10 +7,10 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const featuredImages = [
-  "/2026marathonpics/SVM05156.JPG",
   "/2026marathonpics/SVM05346.JPG",
-  "/2026marathonpics/SVM05385.JPG",
-  "/2026marathonpics/SVM05505.JPG",
+  "/2026marathonpics/SVM05421.JPG",
+  "/2026marathonpics/SVM06129.JPG",
+  "/2026marathonpics/SVM05539.JPG",
 ];
 
 export default function FeaturedGallery() {
@@ -63,6 +63,7 @@ export default function FeaturedGallery() {
                   src={src}
                   alt={`Marathon Highlight ${index + 1}`}
                   fill
+                  unoptimized
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes={
                     index === 0

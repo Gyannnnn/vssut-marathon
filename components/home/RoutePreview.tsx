@@ -172,6 +172,7 @@ export default function RoutePreview() {
                       src={route.image}
                       alt={`${route.title} Map`}
                       fill
+                      unoptimized
                       className="object-cover"
                     />
                     <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent pointer-events-none" />

@@ -101,7 +101,7 @@ export default function VCMessage() {
                 controls={false}
               >
                 <source
-                  src="/2026marathonpics/WhatsApp-Video-2025-12-04-at-9.03.47-PM.mp4"
+                  src="https://veerpreps.s3.ap-south-1.amazonaws.com/uploads/WhatsApp-Video-2025-12-04-at-9.03.47-PM.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.

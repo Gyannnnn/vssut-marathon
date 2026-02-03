@@ -17,6 +17,7 @@ export default function Hero() {
           fill
           className="object-cover opacity-80"
           priority
+          unoptimized
         />
         {/* Gradient Overlay for better text readability */}
         <div className="absolute inset-0 bg-linear-to-br from-primary/80 via-[#0f3460]/70 to-primary/80 mix-blend-multiply"></div>
