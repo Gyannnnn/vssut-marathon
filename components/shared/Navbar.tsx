@@ -117,7 +117,7 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-full sm:max-w-md flex flex-col items-center gap-8 pt-40 border-l border-border/40 z-100"
+              className="w-full overflow-y-scroll sm:max-w-md flex flex-col items-center gap-8 pt-12 border-l border-border/40 z-100"
             >
               <SheetTitle className="sr-only">Menu</SheetTitle>
 

@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary pt-16">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary sm:pt-16 max-sm:py-24">
       <div className="absolute inset-0 bg-black/60 z-0">
         <Image
           src="/VSSUT-Gate.jpg"
