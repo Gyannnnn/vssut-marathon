@@ -14,6 +14,8 @@ export default function BrandAmbassador() {
                 src="/Dutee-Chand.jpg"
                 alt="Ambassador"
                 fill
+                unoptimized
+                priority
                 className="object-cover"
               />
             </div>

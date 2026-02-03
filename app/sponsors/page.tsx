@@ -88,6 +88,8 @@ export default function SponsorsPage() {
                         src={sponsor.image}
                         alt={sponsor.name}
                         fill
+                        unoptimized
+                        priority
                         className="object-contain transition-all duration-500"
                       />
                     ) : (

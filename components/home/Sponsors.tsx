@@ -18,6 +18,8 @@ export default function Sponsors() {
                 src="/vssut-main-logo.png"
                 alt="VSSUT Burla"
                 fill
+                unoptimized
+                priority
                 className="object-contain"
               />
             </div>
@@ -32,6 +34,8 @@ export default function Sponsors() {
                 src="/jsw-energy-logo.jpg"
                 alt="JSW Energy"
                 fill
+                unoptimized
+                priority
                 className="object-contain rounded-full"
               />
             </div>
@@ -46,6 +50,8 @@ export default function Sponsors() {
                 src="/vssut-logo.png"
                 alt="VSSUT Overseas Alumni"
                 fill
+                unoptimized
+                priority
                 className="object-contain"
               />
             </div>

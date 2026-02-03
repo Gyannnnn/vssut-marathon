@@ -47,6 +47,8 @@ export default function AboutPage() {
               src="/SVM05420.JPG"
               alt="Marathon Vision"
               fill
+              unoptimized
+              priority
               className="object-cover"
             />
           </div>
@@ -75,6 +77,8 @@ export default function AboutPage() {
               src="/cultural.JPG"
               alt="VSSUT Campus"
               fill
+              unoptimized
+              priority
               className="object-cover"
             />
           </div>
