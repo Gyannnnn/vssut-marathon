@@ -5,6 +5,7 @@ import { Map, Download, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 
 const ROUTES = [
   {
@@ -215,11 +216,13 @@ export default function RoutePreview() {
               </div> */}
               <Button
                   size="lg"
-                  className="bg-white text-gray-900 hover:bg-gray-100 hover:text-primary h-14 px-8 text-lg font-bold rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all duration-300 group max-sm:px-2 text-wrap"
+                  className="bg-white  text-gray-900 hover:bg-gray-100 hover:text-primary h-14 px-8 text-lg font-bold rounded-full shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transition-all duration-300 group max-sm:px-2 text-wrap"
                 >
+                  <Link href="/2026marathonpics/MAPS/21 km.png" target="_blank" className="w-full flex gap-2 items-center">
                   <Download className="mr-2 h-5 w-5 group-hover:-translate-y-1 transition-transform " />
                   Download  Maps
                   <ChevronRight className="ml-1 h-5 w-5 opacity-50 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
             </motion.div>
           </div>
